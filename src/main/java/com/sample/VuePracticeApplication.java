@@ -11,19 +11,11 @@ import com.fasterxml.jackson.databind.Module.SetupContext;
 
 @SpringBootApplication
 @ComponentScan
-public class VuePracticeApplication implements CommandLineRunner {
+public class VuePracticeApplication {
 
   @Autowired JdbcTemplate jdbcTemplate;
 
   public static void main(String[] args) {
     SpringApplication.run(VuePracticeApplication.class, args);
-  }
-
-  @Override
-  public void run(String... args) throws Exception {
-    jdbcTemplate.execute(
-        "CREATE TABLE customers(id SERIAL, first_name VARCHAR(255), last_name VARCHAR(255))");
-
-    jdbcTemplate.update("INSERT INTO customers(first_name, last_name) VALUES ('John','Woo')");
   }
 }
