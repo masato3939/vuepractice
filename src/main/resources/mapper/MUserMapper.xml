@@ -2,8 +2,8 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.sample.repository.mapper.MUserMapper">
-    <select id="select" resultType="com.sample.repository.entity.MUserEntity">
+<mapper namespace="com.sample.backend.repository.mapper.MUserMapper">
+    <select id="select" resultType="com.sample.backend.repository.entity.MUserEntity">
         SELECT * FROM m_user WHERE id = #{id}
     </select>
 </mapper>

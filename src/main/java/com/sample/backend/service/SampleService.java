@@ -1,10 +1,10 @@
-package com.sample.service;
+package com.sample.backend.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.sample.repository.entity.MUserEntity;
-import com.sample.repository.mapper.MUserMapper;
+import com.sample.backend.repository.entity.MUserEntity;
+import com.sample.backend.repository.mapper.MUserMapper;
 
 @Service
 public class SampleService {
